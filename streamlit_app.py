@@ -60,7 +60,7 @@ def segment_lips_with_custom_roboflow(image, api_key, model_url):
 
 df_lipsticks = load_lipstick_db()
 MODEL_URL = "https://infer.roboflow.com/lips-detection-8jbnb/1"
-API_KEY = st.secrets["exqyo8vHkgd72GHfEtOa"]
+API_KEY = st.secrets["ROBOFLOW_API_KEY"]
 
 uploaded_files = st.file_uploader("📸 Încarcă imagini pentru analiză", type=["jpg", "png"], accept_multiple_files=True)
 
